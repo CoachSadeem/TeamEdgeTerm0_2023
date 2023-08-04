@@ -2,12 +2,12 @@
 const READLINE = require("readline-sync"); //needed to get input
 
 console.log("\nWelcome to the Yu-Gi-Oh Vrains random generator");
-console.log("First pick a number between 1-20. This will decide what character you are.");
-console.log("Then I'll need you to pick a number between 1-20 to decide what your ACE card is!");
+console.log("First pick a number between 1-27. This will decide what character you are.");
+console.log("Then I'll need you to pick a number between 1-27 to decide what your ACE card is!");
 
 //Gets values for generator
-let firstNumber = READLINE.question("\nChoose your first Number ");
-let secondNumber = READLINE.question("Choose your second Number ");
+let firstNumber = READLINE.question("\nChoose your first Number between 1-27 ");
+let secondNumber = READLINE.question("Choose your second Number between 1-27 ");
 console.log();
 
 // creates values for generator
