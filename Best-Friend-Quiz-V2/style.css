@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* Zeros out both margin and padding */
+* {
+  margin: 0.5;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  cursor: none;
+}
+
+/* This changes the size of the picture that was put in the HTMl */
+html {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+/* This changes the color of the questions */
+.main-text {
+  color: dimgrey;
+}
+
+/* Centers all content on the page */
+.main-text,
+.title,
+.questions,
+.friendPercentage,
+img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* changes color of title*/
+.title {
+  color: darkslategray;
+}
+
+/* The codeing here makes it so when the curser lands or passes by an image it moves/ gets bigger, I love animation so much guys-obi */
+.title h1:hover {
+  transition: transform, ease-in-out;
+  transition-duration: 200ms;
+  transform: scale(1.15);
+}
+
+.title::after {
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
+
+.title h1 {
+  background: -webkit-linear-gradient(0deg, rgba(96, 130, 182, 1) 0%, rgba(137, 207, 240, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.questions,
+.friendPercentage {
+  color: dimgrey;
+  font-weight: bold;
+}
+
+.friendPercentage {
+  justify-content: center;
+  font-size: 50px;
+}
+
+/* Custom Cursor */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+body {
+  background-color: #FCFBF4;
+}
+
+p {
+  text-align: center;
+  font-size: 19px;
+}
+
+img {
+  border-radius: 15%;
+  display: flex;
+  text-align: center;
+}
+
+img:hover {
+  background-color: #a1ebde;
+  transition: transform, ease-in-out;
+  transition-duration: 200ms;
+  transform: scale(1.09);
+}
+
+img::after {
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}
+
+.qOne {
+  /* background: red;
+  border-radius: 25%; */
+}
+
+/* Button Stuff */
+
+input[type=radio]:hover {
+  cursor: none;
+  color: #5252ff;
+  transition: transform, ease-in-out;
+  transition-duration: 150ms;
+  transform: scale(1.5);
+}
+
+label {
+  color: #4b464c;
+  font-size: 17.5px;
+  transition: ease-in-out;
+}
+
+input[type=submit] {
+  color: white;
+  background-color: #5252ff;
+  padding: 20px;
+  border: none;
+  border-radius: 75%;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 20px;
+  transition: ease-in-out;
+}
+
+input[type=button] {
+  color: white;
+  background: #4d4dff;
+  padding: 15px;
+  border: none;
+  border-radius: 75%;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  cursor: button;
+  font-size: 20px;
+  transition: ease-in-out;
+}
+
+/* this changes to submit button color when the cursor is hovering over */
+input[type=submit]:hover {
+  background-color: #a1ebde;
+  transition: transform, ease-in-out;
+  transition-duration: 200ms;
+  transform: scale(1.15);
+  cursor: none;
+}
+
+input[type=button]:hover {
+  background-color: #a1ebde;
+  transition: transform, ease-in-out;
+  transition-duration: 200ms;
+  transform: scale(1.15);
+  cursor: none;
+}
+
+input[type=submit]::after {
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}
+
+input[type=button]::after {
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}
+
+/* Scroll bar cuz im just bored at this point */
+::-webkit-scrollbar {
+  width: 20;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b464c;
+  transition: ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transition: ease-in-out;
+  transition-duration: 100ms;
+  background: slateblue;
+}

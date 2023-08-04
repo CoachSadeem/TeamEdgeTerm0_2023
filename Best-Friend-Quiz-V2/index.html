@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>BFF QUIZ</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <div class="title">
+    <h1> Best Friend Quiz 👥 </h1>
+    <!-- "This is our slogan" -obi -->
+    <h3>A Quiz to Test True Friendship</h3>
+  </div>
+
+  <!-- The whole point of this main tag is to house all the questions, imgs, and answers-->
+  <main>
+    <div class="questions">
+      <!-- Creates Img -->
+      <div class="qOne">
+        <img src="pic1.png" width="100%">
+        <p> Question 1: How many times do you meet a month? 📅 <br> </p>
+        <div class="main-text">
+          <!-- Check boxes to select answer choice -->
+          <form>
+            <!-- Creates Answer boc -->
+            <input type="radio" name="question" value="10" id="radio1">
+            <!-- Adds text to answers 
+                "br" stands for break and basically makes a new line-->
+            <label for="questionOneAnswerOne">1-5</label> <br>
+            <input type="radio" name="question" value="15" id="radio2">
+            <label for="questionOneAnswerTwo">5-10</label> <br>
+            <input type="radio" name="question" value="20" id="radio3">
+            <label for="questionOneAnswerThree">11+</label>
+            <p> <br> </p>
+          </form>
+        </div>
+      </div>
+      <!-- adds the pictures that go with each question-->
+      <div class="qTwo">
+        <img src="pic2.png" width=100%>
+        <p> Question 2: How many classes do you have with each other? 🏫📚<br </p>
+          <!-- this gives the answers the points to keep adding up the score-->
+        <div class="main-text">
+          <form action="answer.html">
+            <input type="radio" name="questionTwo" value="10" id="radio4">
+            <label for="questionOneAnswerOne">0-2</label> <br>
+            <input type="radio" name="questionTwo" value="15" id="radio5">
+            <label for="questionOneAnswerOne">3-4</label> <br>
+            <input type="radio" name="questionTwo" value="20" id="radio6">
+            <label for="questionOneAnswerOne">5-6</label>
+            <p> <br> </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="qThree">
+        <img src="pic3.png" width="100%" height="50%">
+        <p> Question 3: How long have you known them for? 📜<br> </p>
+        <div class="main-text">
+          <form action="answer.html">
+            <input type="radio" name="questionThree" value="10" id="radio7">
+            <label for="questionOneAnswerOne">4+ months</label> <br>
+            <input type="radio" name="questionThree" value="15" id="radio8">
+            <label for="questionOneAnswerOne">1-2 years</label> <br>
+            <input type="radio" name="questionThree" value="20" id="radio9">
+            <label for="questionOneAnswerOne">3+ years</label>
+            <p> <br> </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="qFour">
+        <img src="pic4.png" width="100%">
+        <p> Question 4: Whos more extroverted? 🤗😄<br> </p>
+        <div class="main-text">
+          <form action="answer.html">
+            <input type="radio" name="questionFour" value="10" id="radio10">
+            <label for="questionOneAnswerOne">I am </label> <br>
+            <input type="radio" name="questionFour" value="15" id="radio11">
+            <label for="questionOneAnswerOne">They are</label> <br>
+            <input type="radio" name="questionFour" value="20" id="radio12">
+            <label for="questionOneAnswerOne">We both are</label>
+            <p> <br> </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="qFive">
+        <img src="pic5.png">
+        <p> Question 5: Whos more introverted? 🫣🤫<br> </p>
+        <div class="main-text">
+          <form action="answer.html">
+            <input type="radio" name="questionFive" value="10" id="radio13">
+            <label for="questionOneAnswerOne">I am </label> <br>
+            <input type="radio" name="questionFive" value="15" id="radio14">
+            <label for="questionOneAnswerOne">They are</label> <br>
+            <input type="radio" name="questionFive" value="20" id="radio15">
+            <label for="questionOneAnswerOne">We both are</label>
+            <p> <br> </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="qSix">
+        <img src="pic6.png">
+        <p> Question 6: Who takes the most pictures? 📸📱</p>
+        <div class="main-text">
+          <form action="answer.html">
+            <input type="radio" id="vehicle1" name="questionSix" id="radio16" value="10">
+            <label for="vehicle1"> Me!</label><br>
+            <input type="radio" id="vcle2" name="questionSix" id="radio17" value="15">
+            <label for="vicle2"> Them</label><br>
+            <input type="radio" id="vehicle3" name="questionSix" id="radio18" value="20">
+            <label for="vehicle3"> Us both</label><br><br>
+          </form>
+        </div>
+      </div>
+
+      <div class="qSeven">
+        <img src="pic7.png">
+        <p> Question 7: Have you gone on a trip together? 🗺✈️<br> </p>
+        <div class="main-text">
+          <form action="answer.html">
+            <input type="radio" name="questionSeven" value="10" id="radio19">
+            <label for="questionOneAnswerOne">No </label> <br>
+            <input type="radio" name="questionSeven" value="15" id="radio20">
+            <label for="questionOneAnswerOne">We're planning one</label> <br>
+            <input type="radio" name="questionSeven" value="20" id="radio21">
+            <label for="questionOneAnswerOne">Yes</label>
+            <p> <br> </p>
+          </form>
+        </div>
+      </div>
+      <!-- This crrates the submit buttons and links it to the answer pag and the JS function -->
+      <input type="submit" class="submitButton" onclick="questionScores(); window.location.href='answer.html'">
+      <!-- <a href="answer.html">link text</a>  -->
+    </div>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+  </main>
+  <!-- Imports the JS -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

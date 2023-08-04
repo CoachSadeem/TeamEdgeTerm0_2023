@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: white
+    /* font-family: "Times New Roman" */
+}
+
+body {
+  background-color: #1a1717;
+
+
+  /*text-align: center
+  /* font-family: "Arial" */
+}
+
+/* Question colors */
+#firstQuestion {
+  text-align: center;
+  color: white;
+}
+
+#secondQuestion {
+  text-align: center;
+  color: white;
+}
+
+#thirdQuestion {
+  text-align: center;
+  color: white;
+}
+
+#fourthQuestion {
+  text-align: center;
+  color: white;
+}
+
+
+#whiteSpace {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.lines {
+  display: inline;
+  color: black;
+  text-align: left;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+ul li:hover {
+  background: #9c9c9c;
+}
+
+a:visited {
+  color: black;
+}
+
+#text_descoration {
+  text-decoration: none
+}
+
+#Google_icon {
+  float: left;
+  max-width: 32px;
+}
+
+#button_spacing {
+  margin-top: 20px;
+}

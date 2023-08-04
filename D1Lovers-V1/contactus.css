@@ -1,0 +1,108 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  text-align: center
+  /* font-family: "Times New Roman" */
+}
+body{
+  color: white;
+  background-color: #1a1717;
+  /* font-family: "Arial" */
+}
+  
+.container{
+  max-width: 400px;
+}
+#whiteSpace{
+  list-style-type: none;
+  margin-top: 0;
+  padding: 10;
+  overflow: hidden;
+  background-color:  #ffffff;
+} 
+.lines{
+  display: inline;
+  color: black;
+  text-align: left;
+  padding: 14px 14px;
+  text-decoration: none;
+   font-size: 20px;
+}
+ul li:hover {
+  background: #9c9c9c;
+}
+a:link {
+  color: blue;
+}
+a:visited{
+  color: black;
+}
+a.g:visited{
+  color: blueviolet;
+}
+.column {
+  float: left;
+  width: 250px;
+  margin-bottom: 0px;
+  padding: 0 8px;
+}
+.title {
+  text-align: center;
+  color: grey;
+}
+.button:hover {
+  background-color: #555;
+}
+h2{
+  text-align: center;
+}
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row::after{
+  content: "";
+  clear: both;
+  display: inline-table;
+}
+/* making the boxes and adding shadow to the box. */
+#box_effect {
+  border: 1px solid;
+  box-shadow: 5px 10px 8px #c9c5c5;
+  margin: 8px;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+}
+.gray_box{
+  list-style-type: none;
+  max-height: 140px;
+  max-width: 300px;
+  padding: 0;
+  
+  overflow: hidden;
+  background-color: #b5b5b5;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#text_descoration{
+  text-decoration: none
+}
+#Google_icon{
+float: left; 
+max-width: 32px;
+}
+#button_spacing{
+  margin-top: 20px;
+}
+
+
+
